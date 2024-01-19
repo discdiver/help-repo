@@ -11,4 +11,4 @@ if __name__ == "__main__":
     flow.from_source(
         source="https://github.com/discdiver/help-repo.git",
         entrypoint="load_from_storage.py:dummy_flow",
-    )
+    ).deploy(name="example1", work_pool_name="managed2")
